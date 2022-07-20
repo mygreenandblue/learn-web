@@ -1,0 +1,84 @@
+.lang_flag {
+    width: 40px;
+    margin: 2px;
+}
+
+#myCarousel .carousel-item img{
+	aspect-ratio: 4/1.5; /* Đặt tỷ lệ độ rộng / chiều cao của ảnh */
+}
+
+
+#myTour{
+	margin-top: 50px;
+}
+
+#myTour h1{
+	text-transform: uppercase; /* Chuyển thành chữ hoa */
+	font-size: 3rem;
+	font-weight: bolder;
+}
+
+#myTour .card-body{
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top:30%;
+	width: 100%;
+	height: 100px;
+	color: white;
+}
+
+#myTour h3{
+	font-size: 1.5rem;
+}
+
+#myTour .myButton {
+    width: 40%;
+    line-height: 35px;
+    border: 1px white solid;
+    border-radius: 20px;
+    background-color: none;
+}
+
+#myTour .card:hover .card-body{
+	background-color: rgba(0, 0, 0, 0.6);
+	color: wheat;
+}
+
+#myTour .card:hover .myButton {
+	background-color: red;
+}
+
+
+#myTour .card-img-top{
+	aspect-ratio: 4/3;
+}
+
+
+#myTour .card:hover  .card-img-top{
+	transform: scale(1.2);
+	aspect-ratio: 4/3;
+}
+
+#myTour .card{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

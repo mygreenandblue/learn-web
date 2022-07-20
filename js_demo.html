@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="=utf-8">
+        <title></title>
+        <script>
+
+            /*Nhập tháng và năm, cho biết tháng đó có bao nhiêu ngày*/
+            function kiemTraNamNhuan($year){
+                /*Năm nhuận là những năm chia hết cho 400 hoặc chia hết cho 4 và không chia hết cho 100.*/
+            return(year % 400 == 0) || ((year % 4 == 0)&&(year % 100 != 0));
+            
+            }
+
+            function tinhSoNgay($month, $year){
+                switch(month){
+                    case 1: 
+                    case 3:
+                    case 5:
+                    case 7:
+                    case 8:
+                    case 10:
+                    case 11: return 31;
+                    case 4:
+                    case 6:
+                    case 9:
+                    case 11: return 30;
+                    case 2: if(kiemTraNamNhuan(year))
+                    return 29;
+                    else 
+                    return 28;
+                    default: return -1;
+
+                }
+            }
+
+            var moth = prompt("Nhập tháng");
+            var year = prompt("Nhập Năm");
+            month = parseInt(moth);
+            year = parseInt(year);
+            alert('Tháng' + moth + "/" + year + "có số ngày là:" + tinhSoNgay(moth, year));
+
+      </script>  
+    </head>
+</html>
